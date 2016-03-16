@@ -1,0 +1,20 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "generateName": "kubeclient-example-",
+    "labels": {
+      "app": "kubeclient",
+      "role": "example-pod"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "containers": [
+      {
+        "image": "ubuntu:14.04",
+        "name": "hello-world"
+      }
+    ]
+  }
+}

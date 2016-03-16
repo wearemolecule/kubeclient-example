@@ -1,0 +1,45 @@
+hash: 5ec2f3ade5932171102bd78d386d1d21808015a86846816ed322383508cc3571
+updated: 2016-03-16T15:45:54.765088975-05:00
+imports:
+- name: github.com/golang/glog
+  version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
+- name: github.com/golang/protobuf
+  version: 99511271042a09d1e01baea8781caa5210fec66e
+- name: github.com/gorilla/context
+  version: 1ea25387ff6f684839d82767c1733ff4d4d15d0a
+- name: github.com/gorilla/mux
+  version: acf3be1b335c8ce30b2c8d51300984666f0ceefa
+- name: github.com/wearemolecule/kubeclient
+  version: f36ac1de38333cd2a55b72ac1bbc47b150b08d0a
+  vcs: git
+- name: go4.org
+  version: 03efcb870d84809319ea509714dd6d19a1498483
+- name: golang.org/x/build
+  version: 24f7399f96feb8dd2fc54f064e47a886c2f8bb4a
+  subpackages:
+  - kubernetes/api
+- name: golang.org/x/crypto
+  version: 6025851c7c2bf210daf74d22300c699b16541847
+- name: golang.org/x/net
+  version: 35b06af0720201bc2f326773a80767387544f8c4
+  subpackages:
+  - websocket
+- name: golang.org/x/oauth2
+  version: 045497edb6234273d67dbc25da3f2ddbc4c4cacf
+- name: golang.org/x/text
+  version: 1b466db55e0ba5d56ef5315c728216b42f796491
+- name: golang.org/x/tools
+  version: 758728c4b28cfbac299730969ef8f655c4761283
+- name: google.golang.org/api
+  version: 910020f453d58af7ffc8e53499c4fdfbbda05656
+- name: google.golang.org/appengine
+  version: 12d5545dc1cfa6047a286d5e853841b6471f4c19
+- name: google.golang.org/cloud
+  version: 5ff67fe23b1ba3ed2135491d9bb2ca087c84bfde
+- name: google.golang.org/grpc
+  version: 75cc4514281ae1846a64941c8acd478855da61e5
+- name: gopkg.in/yaml.v2
+  version: a83829b6f1293c91addabc89d0571c246397bbf4
+- name: speter.net/go/exp/math/dec/inf
+  version: 42ca6cd68aa922bc3f32f1e056e61b65945d9ad7
+devImports: []

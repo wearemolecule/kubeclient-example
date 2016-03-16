@@ -1,0 +1,11 @@
+package: github.com/wearemolecule/kubeclient-example
+import:
+- package: github.com/gorilla/mux
+- package: gopkg.in/yaml.v2
+- package: golang.org/x/build
+  flatten: true
+  subpackages:
+  - kubernetes/api
+- package: github.com/wearemolecule/kubeclient
+  vcs: git
+  ref: topic/add-replication-controller-support

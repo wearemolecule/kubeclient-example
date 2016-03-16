@@ -1,0 +1,38 @@
+{
+    "kind": "ReplicationController",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "poker-bot",
+        "labels": {
+            "app": "poker-bot"
+        }
+    },
+    "spec": {
+        "replicas": 1,
+        "selector": {
+            "app": "poker-bot"
+        },
+        "template": {
+            "metadata": {
+                "labels": {
+                    "app": "poker-bot"
+                }
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "name": "bot",
+                        "image": "awinder/slack-poker-bot",
+                        "env": [
+                            {
+                                "name": "SLACK_TOKEN",
+                                "value": ""
+                            }
+                        ],
+                        "imagePullPolicy": "Always"
+                    }
+                ]
+            }
+        }
+    }
+}
