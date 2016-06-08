@@ -1,45 +1,24 @@
-hash: 5ec2f3ade5932171102bd78d386d1d21808015a86846816ed322383508cc3571
-updated: 2016-03-16T15:45:54.765088975-05:00
+hash: 70acb6f2deb9d9bad67df4acf39a4a2e540ee413cc41c00f767fb64355c28087
+updated: 2016-06-08T17:33:16.41204882-05:00
 imports:
-- name: github.com/golang/glog
-  version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
-- name: github.com/golang/protobuf
-  version: 99511271042a09d1e01baea8781caa5210fec66e
-- name: github.com/gorilla/context
-  version: 1ea25387ff6f684839d82767c1733ff4d4d15d0a
-- name: github.com/gorilla/mux
-  version: acf3be1b335c8ce30b2c8d51300984666f0ceefa
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/spf13/cobra
+  version: 1238ba19d24b0b9ceee2094e1cb31947d45c3e86
+- name: github.com/spf13/pflag
+  version: cb88ea77998c3f024757528e3305022ab50b43be
 - name: github.com/wearemolecule/kubeclient
-  version: f36ac1de38333cd2a55b72ac1bbc47b150b08d0a
+  version: 672df70c883136054ecb538e8fa91365d5db4678
   vcs: git
-- name: go4.org
-  version: 03efcb870d84809319ea509714dd6d19a1498483
 - name: golang.org/x/build
-  version: 24f7399f96feb8dd2fc54f064e47a886c2f8bb4a
+  version: f88094097f6b28803c6767aed1d369c3eba1d548
   subpackages:
   - kubernetes/api
-- name: golang.org/x/crypto
-  version: 6025851c7c2bf210daf74d22300c699b16541847
 - name: golang.org/x/net
-  version: 35b06af0720201bc2f326773a80767387544f8c4
+  version: 313cf39d4ac368181bce6960ac9be9e7cee67e68
   subpackages:
-  - websocket
-- name: golang.org/x/oauth2
-  version: 045497edb6234273d67dbc25da3f2ddbc4c4cacf
-- name: golang.org/x/text
-  version: 1b466db55e0ba5d56ef5315c728216b42f796491
-- name: golang.org/x/tools
-  version: 758728c4b28cfbac299730969ef8f655c4761283
-- name: google.golang.org/api
-  version: 910020f453d58af7ffc8e53499c4fdfbbda05656
-- name: google.golang.org/appengine
-  version: 12d5545dc1cfa6047a286d5e853841b6471f4c19
-- name: google.golang.org/cloud
-  version: 5ff67fe23b1ba3ed2135491d9bb2ca087c84bfde
-- name: google.golang.org/grpc
-  version: 75cc4514281ae1846a64941c8acd478855da61e5
-- name: gopkg.in/yaml.v2
-  version: a83829b6f1293c91addabc89d0571c246397bbf4
-- name: speter.net/go/exp/math/dec/inf
-  version: 42ca6cd68aa922bc3f32f1e056e61b65945d9ad7
+  - context
+  - context/ctxhttp
+- name: gopkg.in/inf.v0
+  version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
 devImports: []

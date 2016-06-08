@@ -35,7 +35,8 @@ var listCmd = &cobra.Command{
 	Long: `List all pod's or all replication controller's. It will scope to a namespace if given.
 
 	-- list pods
-	-- list rcs`,
+	-- list rcs
+	-- list endpoints`,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		if len(args) < 1 {
 			return defaultErr
@@ -46,6 +47,8 @@ var listCmd = &cobra.Command{
 			return listPods()
 		case "rcs":
 			return listRcs()
+		case "endpoints":
+			return listEndpoints()
 		default:
 			return defaultErr
 		}
@@ -86,6 +89,28 @@ func listRcs() error {
 
 		msg += fmt.Sprintf("| %-30s | %-10d | %-30s\n",
 			rc.Name, rc.Status.Replicas, strings.Join(labels, ", "),
+		)
+	}
+	fmt.Println(msg)
+
+	return nil
+}
+
+func listEndpoints() error {
+	endpoints, err := kubeClient.EndpointsList(context.TODO(), namespace, "")
+	if err != nil {
+		return fmt.Errorf("Error listing endpoints: %v", err)
+	}
+
+	msg := fmt.Sprintf("| %-20s | %-50s\n", "Name", "IPs")
+	for _, endp := range endpoints {
+		var ips []string
+		for _, addr := range endp.Subsets[0].Addresses {
+			ips = append(ips, addr.IP)
+		}
+
+		msg += fmt.Sprintf("| %-20s | %-50s\n",
+			endp.Name, strings.Join(ips, ", "),
 		)
 	}
 	fmt.Println(msg)
