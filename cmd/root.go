@@ -1,4 +1,4 @@
-// Copyright © 2016 Stephen Meriwether <stephen@molecule.io>
+// Copyright © 2016 Molecule Software <devs@molecule.io>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
