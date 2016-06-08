@@ -2,20 +2,20 @@
     "kind": "ReplicationController",
     "apiVersion": "v1",
     "metadata": {
-        "name": "poker-bot",
+        "name": "kubeclient-example",
         "labels": {
-            "app": "poker-bot"
+            "app": "kubeclient-example"
         }
     },
     "spec": {
         "replicas": 1,
         "selector": {
-            "app": "poker-bot"
+            "app": "kubeclient-example"
         },
         "template": {
             "metadata": {
                 "labels": {
-                    "app": "poker-bot"
+                    "app": "kubeclient-example"
                 }
             },
             "spec": {
